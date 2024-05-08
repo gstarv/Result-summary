@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/output.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* outline: 1px solid red; */
+    }
+
+    /* .reaction{
+      background: rgba(255, 87, 87, 0.065);
+    }
+
+    .memory{
+      background: hsla(39, 100%, 56%, 0.065);
+    }
+
+    .verbal{
+      background: hsla(166, 100%, 37%, 0.065);
+    }
+
+    .visual{
+      background: hsla(234, 85%, 45%, 0.065);
+    } */
+
+    .first-container{
+      /* background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%)); */
+      /* background: hsla(256, 72%, 46%, 1);
+      background: hsla(241, 72%, 46%, 0);  */
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  </style>
+</head>
+<body class="min-w-[100vw]  min-h-[100vh] md:w-screen md:h-screen lg:w-screen lg:h-screen flex flex-col justify-center items-center bg-Neutral-White">
+
+  <main class="w-60 flex flex-col lg:flex lg:flex-row lg:w-96 md:flex md:flex-row md:w-[28rem] lg:w-[28rem] shadow-md shadow-black rounded-2xl">
+
+    <div class="first-container w-[100%]  flex flex-col gap-4 mb-[-8px] md:mb-0 md:rounded-2xl z-10 md:z-10 md:mr-[-8px] items-center p-8 rounded-2xl text-Neutral-White bg-gradient-to-t from-Gradients-Light-royal-blue-(background) to-Gradients-Light-slate-blue-(background)">
+
+      <p class="opacity-60  bg-red-700 ">Your Result</p>
+  
+      <div class="rounded-border rounded-full h-24 w-24 grid place-content-center text-center bg-Gradients-Violet-blue-(circle) opacity-75">
+           <span class="text-center text-5xl text-Neutral-White font-semibold">76</span>
+          <span class="opacity-35 text-[10px]">of 100</span>
+      </div>
+    
+      <b>Great</b>
+    
+      <p class="text-center text-[10px] opacity-50">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+  
+    </div>
+    
+    <div class="second-container w-[100%] p-6 flex flex-col justify-between gap-2 text-[10px] rounded-b-2xl  bg-Neutral-White md:rounded-l-none">
+          <h1 class="text-[14px] font-bold">
+            Summary
+          </h1>
+  
+        <div class="reaction flex justify-between p-2 rounded-md bg-Light-reaction-color">
+          <div class="flex gap-2 text-primary-light-red">
+            <img src="/assets/images/icon-reaction.svg" width="10" height="10" alt="reaction">
+            <b>Reaction</b>
+          </div>
+          <div class="">
+            <span class="text-Neutral-Dark-gray-blue font-bold">80</span> <span class="opacity-80">/ 100</span>
+          </div>
+        </div>
+  
+        <div class="memory flex justify-between p-2 rounded-md bg-Light-memory-color">
+          <div class="flex gap-2 text-primary-orangey-yellow">
+            <img src="/assets/images/icon-memory.svg" width="10" height="10" alt="memory">
+          <b>Memory</b>
+          </div>
+          <div>
+            <span class="text-Neutral-Dark-gray-blue font-bold">92</span class="opacity-80"> <span>/ 100</span>
+          </div>
+        </div>
+  
+        <div class="verbal flex justify-between p-2 rounded-md bg-Light-verbal-color">
+          <div class="flex gap-2 text-primary-green-teal">
+            <img src="/assets/images/icon-verbal.svg" width="10" height="10" alt="verbal">
+          <b>Verbal</b>
+          </div>
+          
+          <div>
+           <span class="text-Neutral-Dark-gray-blue font-bold">61</span class="opacity-80"> <span>/ 100</span>
+          </div>
+        </div>
+  
+      <div class="visual flex justify-between p-2 rounded-md bg-Light-visual-color">
+        <div class="flex gap-2 text-primary-cobalt-blue">
+          <img src="/assets/images/icon-visual.svg" width="10" height="10" alt="visual">
+          <b>Visual</b>
+        </div>
+        <div><span class="text-Neutral-Dark-gray-blue font-bold">72</span> <span class="opacity-80"> / 100</span></div>
+      </div>
+  
+        <button class="bg-Neutral-Dark-gray-blue text-white p-2 rounded-2xl bg-opacity-[.8] hover:opacity-100 hover:bg-gradient-to-t from-Gradients-Light-royal-blue-(background) to-Gradients-Light-slate-blue-(background) transition-all transition-[1s]">
+          Continue
+        </button>
+    </div>
+
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
